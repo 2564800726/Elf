@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="46dp"
+    android:layout_height="220dp"
+    android:background="@drawable/bg_frame_short"
+    android:id="@+id/ll_change_mood">
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/iv_mood_first"
+        tool:src="@drawable/ic_mood_exciting"/>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/src_mood_second"
+        android:layout_marginTop="10dp"
+        tool:src="@drawable/ic_mood_clam"/>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/iv_mood_third"
+        android:layout_marginTop="10dp"
+        tool:src="@drawable/ic_mood_unhappy"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/v_divider_change_mood"
+        android:background="@color/color_tool_bar_bottom"
+        android:layout_marginTop="9dp"/>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/iv_mood_current"
+        android:layout_marginTop="10dp"
+        tool:src="@drawable/ic_mood_happy" />
+
+</LinearLayout>

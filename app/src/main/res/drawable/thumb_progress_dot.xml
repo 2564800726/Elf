@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval" >
+            <solid android:color="@color/color_tool_bar_bottom" />
+            <size
+                android:height="17dp"
+                android:width="17dp" />
+        </shape>
+    </item>
+    <item>
+        <inset
+            android:insetBottom="5dp"
+            android:insetLeft="5dp"
+            android:insetRight="5dp"
+            android:insetTop="5dp" >
+            <shape android:shape="oval" >
+                <solid android:color="@color/color_theme" />
+            </shape>
+        </inset>
+    </item>
+
+</layer-list>

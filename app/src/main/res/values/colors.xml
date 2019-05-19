@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="color_theme">#ffffff</color>
+    <color name="color_cover_border">#40024cc3</color>
+    <color name="color_tool_bar_bottom">#1A000000</color>
+    <color name="color_song_name_main">#E6000000</color>
+    <color name="color_singer_name_main">#B3000000</color>
+    <color name="color_text_color_tool_bar">#E65476AC</color>
+    <color name="color_lyric">#5476ac</color>
+    <color name="color_singer_playing">#99000000</color>
+    <color name="color_progress_playing">#80000000</color>
+    <color name="color_black">#000000</color>
+    <color name="color_none">#00000000</color>
+    <color name="color_content_record">#D9000000</color>
+</resources>

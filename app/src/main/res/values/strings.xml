@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Elf</string>
+    <string name="finish_record">完成</string>
+    <string name="cancel_record">取消</string>
+    <string name="skip_record">跳过</string>
+    <string name="comment_comment">评论</string>
+    <string name="from_comment">FROM</string>
+    <string name="experience_comment">Experience</string>
+    <string name="publish_comment">发表</string>
+    <string name="username_menu">UserName</string>
+    <string name="daily_recommend_chinese">日推</string>
+    <string name="daily_recommend_english">Daily Recommend</string>
+    <string name="comments_plaza_chinese">广场</string>
+    <string name="comments_plaza_english">Comments Plaza</string>
+    <string name="my_collection_chinese">我的收藏</string>
+    <string name="my_collection_english">My Collection</string>
+    <string name="setting_chinese">设置</string>
+    <string name="setting_english">Setting</string>
+</resources>
