@@ -12,9 +12,4 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Splash" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="windowNoTitle">true</item>
-        <item name="android:fitsSystemWindows">true</item>
-    </style>
-
 </resources>

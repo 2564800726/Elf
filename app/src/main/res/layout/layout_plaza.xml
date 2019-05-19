@@ -5,33 +5,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <include layout="@layout/toolbar"
-        android:id="@+id/include_toolbar_lyric"/>
+        android:id="@+id/include_toolbar_plaza"/>
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="480dp"
-        android:id="@+id/rv_lyrics"
+        android:layout_height="500dp"
+        android:id="@+id/rv_music_list"
         android:overScrollMode="never"
-        app:layout_constraintTop_toBottomOf="@+id/include_toolbar_lyric">
+        app:layout_constraintTop_toBottomOf="@+id/include_toolbar_plaza">
     </android.support.v7.widget.RecyclerView>
 
     <include layout="@layout/change_mood"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_play_lyric"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="31dp"
-        android:layout_marginStart="31dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
     <ImageView
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:id="@+id/iv_play_lyric"
+        android:id="@+id/iv_playing_plaza"
         android:src="@drawable/ic_music_detail"
-        app:layout_constraintTop_toBottomOf="@+id/rv_lyrics"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginEnd="31dp"
-        android:layout_marginRight="31dp"
-        android:layout_marginTop="30dp" />
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"/>
 
 </android.support.constraint.ConstraintLayout>

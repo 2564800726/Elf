@@ -19,14 +19,14 @@
         <activity android:name=".views.activities.RecordActivity"
             android:theme="@style/Dialog"/>
         <activity android:name=".views.activities.CommentActivity" />
-        <activity android:name=".views.activities.SplashActivity"
-            android:theme="@style/Splash">
+        <activity android:name=".views.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".views.activities.PlazaActivity" />
 
         <service android:name=".utils.musicplayer.PlayingService"
             android:enabled="true"/>

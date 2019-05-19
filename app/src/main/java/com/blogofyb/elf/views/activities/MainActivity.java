@@ -87,6 +87,10 @@ public class MainActivity extends BasedActivity implements View.OnClickListener 
                 DrawerLayout drawerLayout = findViewById(R.id.dl_main);
                 drawerLayout.openDrawer(GravityCompat.END);
                 break;
+            case R.id.fl_comments_plaza:
+                Intent intentForPlazaActivity = new Intent(this, PlazaActivity.class);
+                startActivity(intentForPlazaActivity);
+                break;
         }
     }
 
@@ -102,6 +106,7 @@ public class MainActivity extends BasedActivity implements View.OnClickListener 
         mCover.setOnClickListener(this);
         findViewById(R.id.iv_tool_bar_back).setOnClickListener(this);
         findViewById(R.id.iv_tool_bar_menu).setOnClickListener(this);
+        findViewById(R.id.fl_comments_plaza).setOnClickListener(this);
 
         mSongCover.setAnimation(AnimationUtils.loadAnimation(this, R.anim.rotate_cover));
 

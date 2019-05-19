@@ -16,4 +16,6 @@
     <string name="my_collection_english">My Collection</string>
     <string name="setting_chinese">设置</string>
     <string name="setting_english">Setting</string>
+    <string name="comment_music">评论歌曲</string>
+    <string name="last_time_item">1小时前 第1条</string>
 </resources>
