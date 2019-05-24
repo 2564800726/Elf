@@ -13,6 +13,7 @@ import com.blogofyb.tools.json.MyJson;
 import com.blogofyb.tools.thread.ThreadManager;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class GetLyricModel extends BasedModel<LyricBean> {
     private Callback<LyricBean> mCallback;
@@ -52,7 +53,23 @@ public class GetLyricModel extends BasedModel<LyricBean> {
             }
             mData.add(lyricBean);
         }
-        mCallback.success(mData);
+        List<LyricBean> data = new ArrayList<>();
+        for (int i = 0; i < 13; i++) {
+            if (i == 6) {
+                data.addAll(mData);
+            } else if (i < 6) {
+                LyricBean lyricBean = new LyricBean();
+                lyricBean.setStart(0);
+                lyricBean.setLyric("");
+                data.add(lyricBean);
+            } else {
+                LyricBean lyricBean = new LyricBean();
+                lyricBean.setStart(MyMusicPlayer.total() + 1);
+                lyricBean.setLyric("");
+                data.add(lyricBean);
+            }
+        }
+        mCallback.success(data);
     }
 
     private int transform(String time) {

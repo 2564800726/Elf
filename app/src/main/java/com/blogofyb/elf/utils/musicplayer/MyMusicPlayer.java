@@ -93,7 +93,9 @@ public class MyMusicPlayer {
      * @param callback  需要注册的回调
      */
     public static void registerCallback(PlayCallback callback) {
-        callbacks.add(callback);
+        if (!callbacks.contains(callback)) {
+            callbacks.add(callback);
+        }
     }
 
     /**

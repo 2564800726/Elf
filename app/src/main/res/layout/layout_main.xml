@@ -20,6 +20,13 @@
             android:layout_marginTop="42dp"
             android:id="@+id/fl_cover_main">
 
+            <com.blogofyb.elf.views.customs.Wave
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                app:waveWidth="1dp"
+                app:waveColor="@color/color_lyric"/>
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="220dp"
                 android:layout_height="220dp"

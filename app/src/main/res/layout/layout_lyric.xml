@@ -7,13 +7,43 @@
     <include layout="@layout/toolbar"
         android:id="@+id/include_toolbar_lyric"/>
 
-    <android.support.v7.widget.RecyclerView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="480dp"
-        android:id="@+id/rv_lyrics"
-        android:overScrollMode="never"
-        app:layout_constraintTop_toBottomOf="@+id/include_toolbar_lyric">
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/include_toolbar_lyric"
+        android:id="@+id/fl_lyric">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:id="@+id/rv_lyrics"
+            android:overScrollMode="never">
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/ll_play_control_lyric">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/iv_play_current_lyric"
+                android:src="@drawable/ic_play_piazza"
+                android:layout_margin="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_lyric"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
 
     <include layout="@layout/change_mood"
         android:layout_height="wrap_content"
@@ -28,7 +58,7 @@
         android:layout_height="45dp"
         android:id="@+id/iv_play_lyric"
         android:src="@drawable/ic_music_detail"
-        app:layout_constraintTop_toBottomOf="@+id/rv_lyrics"
+        app:layout_constraintTop_toBottomOf="@+id/fl_lyric"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginEnd="31dp"
         android:layout_marginRight="31dp"
